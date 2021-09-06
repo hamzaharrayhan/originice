@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:originice/GreetingsView/greetings.dart';
 import 'package:originice/SignInView/signin.dart';
 import 'package:originice/SignUpView/signup.dart';
 
@@ -13,10 +14,11 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      initialRoute: '/sign-in',
+      initialRoute: '/greetings',
       getPages: [
         GetPage(name: '/sign-in', page: () => SignIn()),
         GetPage(name: '/sign-up', page: () => SignUp()),
+        GetPage(name: '/greetings', page: () => Greetings()),
       ],
       title: 'Originice',
       theme: ThemeData(

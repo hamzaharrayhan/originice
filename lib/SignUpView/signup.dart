@@ -107,6 +107,7 @@ class SignUp extends StatelessWidget {
                       } else
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                             content: Text('Form Completed! Saving...')));
+                      Get.toNamed('/greetings');
                     },
                     color: Color.fromRGBO(0, 114, 255, 1),
                     text: Text(

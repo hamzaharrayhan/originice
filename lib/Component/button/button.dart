@@ -60,7 +60,6 @@ class _TextCenterButtonState extends State<TextCenterButton> {
         child: ElevatedButton(
       style: ElevatedButton.styleFrom(
         primary: widget.color,
-        minimumSize: Size(double.infinity, 2),
       ),
       onPressed: widget.onPressed,
       child: Container(
