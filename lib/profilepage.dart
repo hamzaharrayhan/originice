@@ -9,7 +9,7 @@ class ProfilePage extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: Padding(
-        padding: EdgeInsets.only(right: 150),
+        padding: EdgeInsets.only(right: 150, top: 10, bottom: 10),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
