@@ -15,11 +15,11 @@ class ChatPage extends StatelessWidget {
       ),
       title: Text(
         "Nama ke ${index + 1}",
-        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900),
       ),
       subtitle: Text(
         "Haloo",
-        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+        style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
       ),
       trailing: Chip(label: Text("2")),
     ),
@@ -31,7 +31,7 @@ class ChatPage extends StatelessWidget {
         body: Column(
       children: [
         Container(
-          padding: EdgeInsets.fromLTRB(20, 30, 20, 20),
+          padding: EdgeInsets.fromLTRB(12, 40, 12, 15),
           color: Colors.blue,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -39,17 +39,17 @@ class ChatPage extends StatelessWidget {
               Text(
                 "Chats",
                 style: TextStyle(
-                    fontSize: 32,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
               Row(
                 children: [
-                  Icon(Icons.search, size: 30, color: Colors.white),
+                  Icon(Icons.search, size: 24, color: Colors.white),
                   SizedBox(
                     width: 20,
                   ),
-                  Icon(Icons.more_vert, size: 30, color: Colors.white),
+                  Icon(Icons.more_vert, size: 24, color: Colors.white),
                 ],
               )
             ],
