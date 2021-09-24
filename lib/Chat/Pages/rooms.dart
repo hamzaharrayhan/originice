@@ -115,7 +115,7 @@ class _RoomsPageState extends State<RoomsPage> {
           onPressed: _user == null ? null : logout,
         ),
         systemOverlayStyle: SystemUiOverlayStyle.light,
-        title: const Text('Rooms'),
+        title: const Text('Chats'),
       ),
       body: _user == null
           ? Container(
