@@ -72,7 +72,7 @@ class _RoomsPageState extends State<RoomsPage> {
       child: CircleAvatar(
         backgroundColor: hasImage ? Colors.transparent : color,
         backgroundImage: hasImage ? NetworkImage(room.imageUrl!) : null,
-        radius: 20,
+        radius: 30,
         child: !hasImage
             ? Text(
                 name.isEmpty ? '' : name[0].toUpperCase(),
@@ -173,12 +173,24 @@ class _RoomsPageState extends State<RoomsPage> {
                       child: Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16,
-                          vertical: 8,
+                          vertical: 5,
                         ),
-                        child: Row(
+                        child: Column(
                           children: [
-                            _buildAvatar(room),
-                            Text(room.name ?? ''),
+                            Row(
+                              children: [
+                                _buildAvatar(room),
+                                Text(
+                                  room.name ?? '',
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                              ],
+                            ),
+                            Divider(
+                              thickness: 1,
+                            ),
                           ],
                         ),
                       ),

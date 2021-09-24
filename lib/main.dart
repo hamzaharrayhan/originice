@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-// import 'package:originice/Page/dashboard.dart';
-
-// import 'Page/dashboard.dart';
-// import 'Page/welcomePage.dart';
-import 'Chat/Pages/rooms.dart';
+import 'package:originice/Page/dashboard.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,17 +11,16 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-      final textTheme = Theme.of(context).textTheme;
+    final textTheme = Theme.of(context).textTheme;
     return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+          primarySwatch: Colors.blue,
           textTheme: GoogleFonts.openSansTextTheme(textTheme).copyWith(
             bodyText1: GoogleFonts.montserrat(textStyle: textTheme.bodyText1),
           )),
-   home: RoomsPage(),
+      home: Dashboard(),
     );
   }
 }

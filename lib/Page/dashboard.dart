@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:originice/Page/chatpage.dart';
+import 'package:originice/Chat/Pages/rooms.dart';
 import 'package:originice/Page/profilepage.dart';
 
 class Dashboard extends StatefulWidget {
@@ -16,7 +16,7 @@ class _DashboardState extends State<Dashboard> {
       'Divisi',
       style: optionStyle,
     ),
-    ChatPage(),
+    RoomsPage(),
     Text(
       'Timeline',
       style: optionStyle,
