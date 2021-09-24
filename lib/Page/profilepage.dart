@@ -111,7 +111,7 @@ class ProfilePage extends StatelessWidget {
               Divider(
                 thickness: 1,
               ),
-              bioboxed(icon: Icons.calendar_today, text: "01/06.2000"),
+              bioboxed(icon: Icons.calendar_today, text: "01/06/2000"),
               Divider(
                 thickness: 1,
               ),

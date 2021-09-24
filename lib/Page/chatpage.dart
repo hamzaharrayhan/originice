@@ -8,10 +8,12 @@ class ChatPage extends StatelessWidget {
       leading: CircleAvatar(
         radius: 30,
         backgroundColor: Colors.black26,
-        child: Image.asset(
-          'assets/profile.png',
-          fit: BoxFit.contain,
-        ),
+        child: ClipRRect(
+            child: Image.asset(
+              'assets/profile.png',
+              fit: BoxFit.fill,
+            ),
+            borderRadius: BorderRadius.circular(50)),
       ),
       title: Text(
         "Nama ke ${index + 1}",
